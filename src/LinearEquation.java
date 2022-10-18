@@ -18,7 +18,7 @@ public class LinearEquation {
     /* Calculates and returns distance between (x1, y1) and (x2, y2), rounded to
        the nearest hundredth */
     public double distance() {
-        return 0;
+        return Math.sqrt(Math.pow(y2 - y1, 2) + Math.pow(x2 - x1, 2));
     }
 
 
@@ -68,7 +68,7 @@ public class LinearEquation {
     /* Returns a String of the coordinate point on the line that has the given x value, with
        both x and y coordinates as decimals to the nearest hundredth, e.g (-5.0, 6.75) */
     public String coordinateForX(double xValue) {
-        return "";
+        return "0";
     }
 
 
@@ -78,7 +78,7 @@ public class LinearEquation {
         HINT:  the Math.round method can help with this!
      */
     public double roundedToHundredth(double toRound) {
-        return 0;
+        return Math.round(toRound);
     }
 
 
