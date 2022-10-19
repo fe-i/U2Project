@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53ef540f-2244-4dbc-8058-26c9ec37dd21" name="Changes" comment="initial files">
+    <list default="true" id="53ef540f-2244-4dbc-8058-26c9ec37dd21" name="Changes" comment="work on methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LinearEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinearEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinearEquationRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinearEquationRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666110370573</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="work on methods">
+      <created>1666194183992</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666194183992</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial files" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial files" />
+    <MESSAGE value="work on methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="work on methods" />
   </component>
 </project>

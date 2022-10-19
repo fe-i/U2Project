@@ -57,8 +57,21 @@ public class LinearEquation {
         HINT: Absolute value might be helpful for printing negative y-intercepts as
                subtraction!
      */
-    public String equation() { //TODO
-        return "y = " + (y2 - y1) + "/" + (x2 - x1) + "x + " + yIntercept();
+    public String equation() {
+        int rise = y2 - y1;
+        int run = x2 - x1;
+
+        if (rise == 0) { // horizontal slope
+            return "y = " + y1;
+        } //TODO: -x becomes positive
+        else if (run < 0 && rise < 0 || run < 0) { // both change in x and y are negative || change in x is negative
+            run *= -1; // negate x value
+            rise *= -1; // negate y value
+        }
+        String yIntercept = (yIntercept() != 0 ? yIntercept() > 0 ? " + " + Math.abs(yIntercept()) : " - " + Math.abs(yIntercept()) : "");
+        String slope = rise % run == 0 ? "" + (Math.abs(rise / run) != 1 ? rise / run : "") : rise + "/" + run;
+
+        return "y = " + slope + "x" + yIntercept;
     }
 
     /* Returns a String of the coordinate point on the line that has the given x value, with
