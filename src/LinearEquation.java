@@ -63,13 +63,16 @@ public class LinearEquation {
 
         if (rise == 0) { // horizontal slope
             return "y = " + y1;
-        } //TODO: -x becomes positive
+        }
+        //TODO: -x becomes positive
         else if (run < 0 && rise < 0 || run < 0) { // both change in x and y are negative || change in x is negative
             run *= -1; // negate x value
             rise *= -1; // negate y value
         }
+        System.out.println(rise + "/" + run);
+        String slope = rise % run == 0 ? (Math.abs(rise / run) != 1 ? "" + rise / run : "") : rise + "/" + run;
+
         String yIntercept = (yIntercept() != 0 ? yIntercept() > 0 ? " + " + Math.abs(yIntercept()) : " - " + Math.abs(yIntercept()) : "");
-        String slope = rise % run == 0 ? "" + (Math.abs(rise / run) != 1 ? rise / run : "") : rise + "/" + run;
 
         return "y = " + slope + "x" + yIntercept;
     }
